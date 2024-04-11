@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainumby Eventos</title>
+    <link rel="shortcut icon" href="./images/mainumby2b.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=3435308861" class="whatsapp" target="_blank"> <i
+            class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.scrollUp.js"></script>
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollImg: true
+            });
+        });
+    </script>
+    <meta name="theme-color" content="#2091F9">
+</head>
+
+<body ontouchstart>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title"><b>Mainumby</b></h2>
+                <!-- <img src="./images/logo_mainumby.png" class="nav__title"> -->
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links"><b>Inicio</b></a>
+                </li>
+                <li class="nav__items">
+                    <button onclick="cerrar()" class="nav__links"><a href="#propuestas"><b>Propuestas</b></a></button>
+                </li>
+                <li class="nav__items">
+                    <button onclick="cerrar()" class="nav__links"><a href="#galeria"><b>Galería</b></a></button>
+                </li>
+                <li class="nav__items">
+                    <button onclick="cerrar()" class="nav__links"><a href="#contacto"><b>Contacto</b></a></button>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const menu = document.querySelector('.nav__link');
+
+        function cerrar() {
+            menu.classList.remove("nav__link--show");
+        }
+    </script>
+
+    <main>
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Quienes somos</h2>
+                    <p class="knowledge__paragraph">"Somos un salón multiespacio dedicado a la creación y celebración de
+                        experiencias únicas.
+                        Nuestro compromiso es brindar un espacio versátil y dinámico donde la creatividad y la
+                        innovación se encuentren.
+                        Ofrecemos instalaciones de primer nivel para eventos, reuniones, exposiciones y mucho más. Nos
+                        apasiona conectar a las personas y crear momentos inolvidables.
+                        Descubre la magia de nuestro espacio, donde cada detalle está diseñado para inspirar."</p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/pic2.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container" id="propuestas">
+            <h2 class="subtitle">Propuestas</h2>
+            <div class="body__page">
+
+                <div class="container__card">
+
+                    <div class="card c1">
+                        <div class="icon">
+                            <h3 class="info_header">¿Que ofrecemos?</h3>
+                        </div>
+                        <div class="info__description">
+                            <p><b>En nuestro salón multiespacio, nos especializamos en crear eventos inolvidables para
+                                    todas las edades.</p>
+                            <p>Ya sea que estés celebrando un cumpleaños infantil, una reunión familiar o
+                                cualquier otro tipo de evento.</p>
+                            <p>Contamos con las instalaciones y servicios necesarios para hacer de tu ocasión un
+                                momento único.
+                                </b></p>
+                        </div>
+                    </div><br>
+
+                    <div class="card c2">
+                        <div class="icon">
+                            <h3 class="info_header">Fiestas y eventos sociales</h3>
+                        </div>
+                        <div class="info__description">
+                            <p><b>
+                                    <p>* Principalmente cumpleaños infantiles</p>
+                                    <p>* Cumpleaños y aniversarios</p>
+                                    <p>* Bautizos</p>
+                                    <p>* Baby shower </p>
+                                    <p>* Celebraciones en general</p>
+                                </b></p>
+                        </div>
+                    </div>
+
+                    <div class="card c3">
+                        <div class="icon">
+                            <h3 class="info_header">Eventos corporativos</h3>
+                        </div>
+                        <div class="info__description">
+                            <p><b>
+                                    <p>* Presentaciones Comerciales</p>
+                                    <p>* Reuniones Empresariales</p>
+                                    <p>* Celebraciones</p>
+                                    <p>* Eventos en general </p>
+                                    <p>* Capacitaciones</p>
+                                </b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Nuestros servicios
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show"><b>El Salón Multiespacio ofrece una variedad de servicios para
+                                eventos con una capacidad máxima para 100 personas, incluyendo una cocina equipada,
+                                baños separados, áreas de juego para niños, una mini disco con parlante Bluetooth, y un
+                                espacio para personalizar tu evento con decoración
+                                y una mesa para el cumpleañero. También proporcionamos una tarjeta de invitación digital
+                                personalizada y cobertura de urgencias médicas.
+                                En el Salón Multiespacio, nos encargamos de que tu evento sea único y especial. ¡Ven y
+                                disfruta de nuestras instalaciones y servicios de calidad!
+                                No te preocupes por los detalles, En nuestra pestaña de "Opcionales", encontrarás una
+                                selección de servicios adicionales que puedes agregar a tu
+                                evento y que mejor se adapte a tus gustos y presupuestos.</b>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Opciones personalizadas
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show"><b>
+                                En el Salón Multiespacio, ofrecemos una amplia gama de opciones personalizadas para tu
+                                evento.
+                                Estas opciones incluyen decoración temática, torta de cumpleaños, mesa dulce, comidas
+                                frías para adultos, piñata artesanal personalizada,
+                                sorpresitas, animación, fotografía, piscina en temporada de verano con guardavidas,
+                                descartables, mobiliario, living estilo puff, servicio de mozos,
+                                vajilla general y snacks para niños. Estos opcionales no están incluidos en el paquete
+                                básico y se proporciona un presupuesto personalizado según tus necesidades y
+                                preferencias.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Medios de pago
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show"><b>Los métodos de pago aceptados para nuestros servicios son a través
+                                de transferencia bancaria y en efectivo.
+                                Por favor, elige la opción que mejor se adapte a tus necesidades al momento de realizar
+                                el pago.</b><br><br>
+                            <!-- <img src="images/payment.png" alt="Pagos"> -->
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="questions__offer" id="galeria">
+                <h2 class="subtitle">Galería</h2>
+            </section>
+        </section>
+    </main>
+
+    <main class="main_img">
+        <div class="contenedor_galeria">
+            <div class="contenedor_images">
+                <img src="images/galeria6.jpeg" name="myImg" class="img" alt="pic_4" id="img_galeria"
+                    onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/galeria8.jpeg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <!-- <div class="contenedor_images">
+                <img src="images/galeria16.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/galeria15.jpeg" class="img" alt="pic_3" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/galeria17.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/pics 4.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/pics 3.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div> -->
+            <div class="contenedor_images">
+                <img src="images/galeria10.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/galeria12.jpeg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/galeria18.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/galeria19.jpeg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/galeria11.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+    <!--         <div class="contenedor_images">
+                <img src="images/galeria20.jpeg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div> -->
+            <div class="contenedor_images">
+                <img src="images/pics 13.jpeg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/pics 2.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+           <!--  <div class="contenedor_images">
+                <img src="images/pics 10.jpeg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div> -->
+            <div class="contenedor_images">
+                <img src="images/pics 7.jpeg" class="img" alt="pic_3" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/pics 6.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <!-- <div class="contenedor_images">
+                <img src="images/pics 19.jpg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/pics 9.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div> -->
+            <div class="contenedor_images">
+                <img src="images/pics 5.jpeg" class="img" alt="pic_1" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <!-- <div class="contenedor_images">
+                <img src="images/pics 18.jpg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div>
+            <div class="contenedor_images">
+                <img src="images/pics 16.jpeg" class="img" alt="pic_2" id="img_galeria" onclick="onClick(this)">
+            </div> -->
+        </div>
+
+
+        <section class="container__video">
+            <div class="video-container">
+                <!-- <video src="./video/video.mp4" autoplay loop controls></video>
+                <video src="./video/video.ogv" autoplay loop controls></video> -->
+
+                <video controls>
+                    <!-- <source src="./video/video.avi" type="video/avi">
+                    <source src="./video/video.ogv" type="video/ogv"> -->
+                    <source src="./video/video.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+        </section><br>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content-foo">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848.5352815719298!2d-60.48748382443971!3d-31.712039701638616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4510064eb27fd%3A0x20b6f535bd3b470c!2sMainumby%20Sal%C3%B3n%20Multiespacio!5e0!3m2!1ses-419!2sar!4v1711107904579!5m2!1ses-419!2sar"
+                width="340" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="content-foo">
+            <p><b>El Virayú 3649 Paraná, Entre Ríos</b></p>
+        </div>
+        <div class="content-foo">
+            <p><b>Móvil 0343-5308861</b></a></p>
+        </div>
+        <div class="content-foo">
+            <p><b>Mainumbyeventos@gmail.com</b></p>
+        </div>
+        <section class="footer__copy container" id="contacto">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/share/NyksMdLZgJWJvXVp/?mibextid=qi2Omg" class="footer__icons"
+                    target="_blank"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/mainumby_eventos?igsh=cDBxZDNxeHF6Z21z" class="footer__icons"
+                    target="_blank"><img src="./images/instagram.svg" class="footer__img"></a><br><br>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        // var img = document.getElementById("img_galeria1");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        function onClick(element) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            document.getElementById("img01").src = element.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
