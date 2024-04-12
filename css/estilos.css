@@ -952,6 +952,14 @@ video {
         font-size: 1rem;
     }
 
+    .knowledge__container{
+        margin-top: -70px;
+    }
+
+    .price{
+        margin-top: -100px
+    };
+
     .subtitle{
         font-size: 1.8rem;
     }
